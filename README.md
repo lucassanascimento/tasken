@@ -2,7 +2,7 @@
 
 ## :wrench: Tecnologias
 
-:red_circle: Node
+🔴: Node
 
 ## :wrench: Ferramentas
 
