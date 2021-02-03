@@ -8,15 +8,21 @@ const productsController = new ProductsController();
 
 productRouter.get('/', productsController.findAll);
 
-productRouter.get('/find-by-id/:id', productsController.findById);
+productRouter.get('/busca-por-id/:id', productsController.findById);
 
-productRouter.get('/get-by-amount/:id', productsController.getAmount);
+productRouter.get('/busca-quantidade/:id', productsController.getAmount);
 
-productRouter.get('/min', productsController.findByLowerAmount);
+productRouter.get(
+  '/menor-quantidade-em-estoque',
+  productsController.findByLowerAmount,
+);
 
-productRouter.get('/max', productsController.findByLargeAmount);
+productRouter.get(
+  '/maior-quantidade-em-estoque',
+  productsController.findByLargeAmount,
+);
 
-productRouter.get('/end', productsController.findByProductOutOfStock);
+productRouter.get('/sem-estoque', productsController.findByProductOutOfStock);
 
 productRouter.post(
   '/',
@@ -31,8 +37,6 @@ productRouter.post(
   productsController.create,
 );
 
-productRouter.get('/', productsController.delete);
-
 productRouter.delete(
   '/:id',
   celebrate({
@@ -44,7 +48,7 @@ productRouter.delete(
 );
 
 productRouter.post(
-  '/update/:id',
+  '/atualiza/:id',
   celebrate({
     [Segments.BODY]: {
       name: Joi.string().required(),
