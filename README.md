@@ -77,3 +77,9 @@ Antes de executar esse comando verifique se seu banco de dados está rodando </b
 7. ✅: Obter Produto com menor Estoque - GET - localhost:3333/products/menor-quantidade-em-estoque
 8. ✅: Obter Produto com maior Estoque - GET - localhost:3333/products/maior-quantidade-em-estoque
 9. ✅: Obter Produto sem Estoque - GET - localhost:3333/products/sem-estoque
+
+## :ballot_box_with_check: JSON com requisições
+
+<p>Na pasta requests, há um arquivo chamado de "tasken_requests", esse arquivo pode ser importado nos softwares Insomnis e  Postman. Nele ha todos as requisições que a api é capaz de fazer e seus respectivos bodys e params.</p>
+
+<p>Lembrando que os ids não irão funcionar, como supracitado.</p>
