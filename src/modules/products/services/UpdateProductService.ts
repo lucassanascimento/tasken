@@ -1,6 +1,7 @@
 import AppError from '@shared/errors/AppError';
 import Service from '@shared/protocols/Service';
 import { injectable, inject } from 'tsyringe';
+import { isUuid } from 'uuidv4';
 import Product from '../infra/typeorm/entities/Product';
 import IProductsRepository from '../repositories/IProductsRepository';
 
@@ -27,6 +28,9 @@ export default class CreateProductService
     amount,
     value,
   }: IRequest): Promise<Product> {
+    if (!isUuid(id)) {
+      throw new AppError('Product ID is invalid!', 400);
+    }
     const checkProductExists = await this.productsRepository.findById(id);
 
     if (!checkProductExists) {

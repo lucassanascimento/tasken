@@ -1,8 +1,6 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 import { classToClass } from 'class-transformer';
-import { isUuid } from 'uuidv4';
-import AppError from '@shared/errors/AppError';
 import CreateProductService from '../../../services/CreateProductService';
 import ListProductService from '../../../services/ListProductService';
 import DeleteProductService from '../../../services/DeleteProductService';
@@ -46,20 +44,12 @@ export default class ProductsController {
     const findAllController = container.resolve(FindByIdProductService);
     const { id } = request.params;
 
-    if (!isUuid(id)) {
-      throw new AppError('Product id is invalid!', 400);
-    }
-
     const products = await findAllController.execute(id);
-    return response.json(products);
+    return response.json(classToClass(products));
   }
 
   public async delete(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
-
-    if (!isUuid(id)) {
-      throw new AppError('Product id is invalid!', 400);
-    }
 
     const deleteController = container.resolve(DeleteProductService);
 
@@ -73,13 +63,9 @@ export default class ProductsController {
     const { name, manufacturer, amount, value } = request.body;
     const { id } = request.params;
 
-    if (!isUuid(id)) {
-      throw new AppError('Product id is invalid!', 400);
-    }
+    const updateProduct = container.resolve(UpdateProductService);
 
-    const createProduct = container.resolve(UpdateProductService);
-
-    const product = await createProduct.execute({
+    const product = await updateProduct.execute({
       id,
       name,
       manufacturer,
@@ -95,10 +81,6 @@ export default class ProductsController {
     response: Response,
   ): Promise<Response> {
     const { id } = request.params;
-
-    if (!isUuid(id)) {
-      throw new AppError('Product id is invalid!', 400);
-    }
 
     const createProduct = container.resolve(GetAmountProductService);
 

@@ -47,7 +47,7 @@ productRouter.delete(
   productsController.delete,
 );
 
-productRouter.post(
+productRouter.put(
   '/atualiza/:id',
   celebrate({
     [Segments.BODY]: {
