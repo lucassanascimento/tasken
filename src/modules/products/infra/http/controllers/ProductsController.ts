@@ -9,8 +9,8 @@ import DeleteProductService from '../../../services/DeleteProductService';
 import FindByIdProductService from '../../../services/FindByIdProductService';
 import UpdateProductService from '../../../services/UpdateProductService';
 import GetAmountProductService from '../../../services/GetAmountProductService';
-import LowerAmountProductInStockService from '../../../services/LowerAmountProductInStockService';
-import LargeAmountProductInStockService from '../../../services/LargeAmountProductInStockService';
+import LowerAmountProductInStockService from '../../../services/GetProductWithLessStockService';
+import LargeAmountProductInStockService from '../../../services/GetProductWithHigherStockService';
 import GetProductOutOfStockService from '../../../services/GetProductOutOfStockService';
 
 export default class ProductsController {

@@ -3,7 +3,7 @@ import Product from '../infra/typeorm/entities/Product';
 import IProductsRepository from '../repositories/IProductsRepository';
 
 @injectable()
-export default class LargeAmountProductInStockService {
+export default class GetProductWithHigherStockService {
   constructor(
     @inject('ProductsRepository')
     private productsRepository: IProductsRepository,
