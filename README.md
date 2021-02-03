@@ -68,8 +68,6 @@ Antes de executar esse comando verifique se seu banco de dados está rodando </b
 
 <p>Função que a rota chama - Método - Exemplo</p>
 
-> ## Rotas da API
-
 1. ✅: Criar Produto - POST - localhost:3333/products/
 2. ✅: Alterar Produto - PUT - localhost:3333/products/atualiza/ID_DO_PRODUTO
 3. ✅: Buscar Produtos - GET - localhost:3333/products/
