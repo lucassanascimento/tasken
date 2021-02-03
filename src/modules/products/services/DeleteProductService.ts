@@ -1,4 +1,3 @@
-// import Service from '@shared/protocols/Service';
 import { injectable, inject } from 'tsyringe';
 import AppError from '@shared/errors/AppError';
 import IProductsRepository from '../repositories/IProductsRepository';

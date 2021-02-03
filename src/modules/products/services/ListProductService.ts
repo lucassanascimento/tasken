@@ -1,4 +1,3 @@
-// import Service from '@shared/protocols/Service';
 import { injectable, inject } from 'tsyringe';
 import Product from '../infra/typeorm/entities/Product';
 import IProductsRepository from '../repositories/IProductsRepository';

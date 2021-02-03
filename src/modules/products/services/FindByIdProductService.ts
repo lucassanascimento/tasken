@@ -1,4 +1,3 @@
-// import Service from '@shared/protocols/Service';
 import { injectable, inject } from 'tsyringe';
 import { isUuid } from 'uuidv4';
 import AppError from '@shared/errors/AppError';

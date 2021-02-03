@@ -1,7 +1,6 @@
 /* eslint-disable object-shorthand */
 import { getRepository, Repository } from 'typeorm';
 import ICreateProductDTO from '@modules/products/dtos/ICreateProductDTO';
-// import IAmountProductDTO from '@modules/products/dtos/IAmountProductDTO';
 import IProductsRepository from '@modules/products/repositories/IProductsRepository';
 import Product from '../entities/Product';
 
