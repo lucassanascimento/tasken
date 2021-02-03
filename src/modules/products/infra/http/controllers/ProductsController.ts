@@ -64,7 +64,9 @@ export default class ProductsController {
     const deleteController = container.resolve(DeleteProductService);
 
     await deleteController.execute(id);
-    return response.status(200).json();
+    return response
+      .status(200)
+      .json({ message: 'Produto removido com sucesso!' });
   }
 
   public async update(request: Request, response: Response): Promise<Response> {
