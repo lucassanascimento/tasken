@@ -80,6 +80,6 @@ Antes de executar esse comando verifique se seu banco de dados está rodando </b
 
 ## :ballot_box_with_check: JSON com requisições
 
-<p>Na pasta requests, há um arquivo chamado de "tasken_requests", esse arquivo pode ser importado nos softwares Insomnis e  Postman. Nele ha todos as requisições que a api é capaz de fazer e seus respectivos bodys e params.</p>
+<p>Na pasta requests, há um arquivo chamado de "tasken_requests", esse arquivo pode ser importado nos softwares Insomnia e Postman. Nele ha todos as requisições que a api é capaz de fazer e seus respectivos bodies e params.</p>
 
 <p>Lembrando que os ids não irão funcionar, como supracitado.</p>
