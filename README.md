@@ -27,15 +27,15 @@
 
 > ## APIs funcionalidades
 
-1. :heavy_check_mark: [Criar Produto](./requirements/create-user.md)
-2. :heavy_check_mark: [Alterar Produto](./requirements/session-user.md)
-3. :heavy_check_mark: [Buscar Produtos](./requirements/add-favorite-product.md)
-4. :heavy_check_mark: [Buscar Produtos por ID](./requirements/add-favorite-product.md)
-5. :heavy_check_mark: [Deletar Produto](./requirements/remove-favorite-product.md)
-6. :heavy_check_mark: [Obter Quantidade de Produto em estoque](./requirements/list-favorite-products.md)
-7. :heavy_check_mark: [Obter Produto com menor Estoque](./requirements/list-favorite-products.md)
-8. :heavy_check_mark: [Obter Produto com maior Estoque](./requirements/list-favorite-products.md)
-9. :heavy_check_mark: [Obter Produto sem Estoque](./requirements/list-favorite-products.md)
+1. :heavy_check_mark: Criar Produto
+2. :heavy_check_mark: Alterar Produto
+3. :heavy_check_mark: Buscar Produtos
+4. :heavy_check_mark: Buscar Produtos por ID
+5. :heavy_check_mark: Deletar Produto
+6. :heavy_check_mark: Obter Quantidade de Produto em estoque
+7. :heavy_check_mark: Obter Produto com menor Estoque
+8. :heavy_check_mark: Obter Produto com maior Estoque
+9. :heavy_check_mark: Obter Produto sem Estoque
 
 ## :ballot_box_with_check: Executando o projeto
 
