@@ -69,12 +69,15 @@ Antes de executar esse comando verifique se seu banco de dados está rodando </b
 <p>A seguir, a listagem das rotas e suas respectivas funcionalidades. Lembrado que os ids inseridos, são apenas exemplos. Para que seja eficiente, você deverá inserir os ids do seu banco.</p>
 
 <p>Função que a rota chama - Método - Exemplo</p>
-1. :heavy_check_mark: Criar Produto                             - POST - localhost:3333/products/
-2. :heavy_check_mark: Alterar Produto                           - PUT -localhost:3333/products/atualiza/ID_DO_PRODUTO
-3. :heavy_check_mark: Buscar Produtos                           - GET - localhost:3333/products/
-4. :heavy_check_mark: Buscar Produtos por ID                    - GET - localhost:3333/products/ID_DO_PRODUTO
+
+> ## Rotas da API
+
+1. :heavy_check_mark: Criar Produto                             - POST   - localhost:3333/products/
+2. :heavy_check_mark: Alterar Produto                           - PUT    -  localhost:3333/products/atualiza/ID_DO_PRODUTO
+3. :heavy_check_mark: Buscar Produtos                           - GET    -  localhost:3333/products/
+4. :heavy_check_mark: Buscar Produtos por ID                    - GET    -  localhost:3333/products/ID_DO_PRODUTO
 5. :heavy_check_mark: Deletar Produto                           - DELETE - localhost:3333/products/ID_DO_PRODUTO
-6. :heavy_check_mark: Obter Quantidade de Produto em estoque    - GET - localhost:3333/products/busca-quantidade/ID_DO_PRODUTO
-7. :heavy_check_mark: Obter Produto com menor Estoque           - GET - localhost:3333/products/menor-quantidade-em-estoque
-8. :heavy_check_mark: Obter Produto com maior Estoque           - GET - localhost:3333/products/maior-quantidade-em-estoque
-9. :heavy_check_mark: Obter Produto sem Estoque                 - GET- localhost:3333/products/sem-estoque
+6. :heavy_check_mark: Obter Quantidade de Produto em estoque    - GET    - localhost:3333/products/busca-quantidade/ID_DO_PRODUTO
+7. :heavy_check_mark: Obter Produto com menor Estoque           - GET    - localhost:3333/products/menor-quantidade-em-estoque
+8. :heavy_check_mark: Obter Produto com maior Estoque           - GET    - localhost:3333/products/maior-quantidade-em-estoque
+9. :heavy_check_mark: Obter Produto sem Estoque                 - GET    - localhost:3333/products/sem-estoque
